@@ -1,0 +1,10 @@
+{
+	"name": "logic-dev",
+	"displayName": "[purple]Logic [gray]dev",
+	"author": "DeltaNedas and jumps-are-op",
+	"description": "A simple mod that help people make better logic.",
+	"repo": "jumps-are-op/logic-dev",
+	"hidden": true,
+	"version": "0.0.1",
+	"minGameVersion": 131
+}
