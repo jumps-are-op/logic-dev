@@ -14,14 +14,14 @@ global.override.block(LogicBlock, {
 				this.ldbCollapser.toggle();
 				button.style.imageUp = this.ldbCollapser.collapsed ? Icon.downOpen : Icon.upOpen;
 			}).size(40).center().tooltip("vars").get();
+			//no one need this
+			//global.ldbTipNo("restart",
+			//	table.button(Icon.rotate, Styles.clearTransi, () => this.executor.vars[0].numval = 0)
+			//		.size(40).center()
+			//);
 
 			global.ldbTipNo("restart",
-				table.button(Icon.rotate, Styles.clearTransi, () => this.executor.vars[0].numval = 0)
-					.size(40).center()
-			);
-
-			global.ldbTipNo("reset",
-				table.button(Icon.trash, Styles.clearTransi, () => {
+				table.button(Icon.rotate, Styles.clearTransi, () => {
 					this.updateCode(this.code);
 					let collapsed = this.ldbCollapser.isCollapsed();
 					this.ldbBuildVariables();
