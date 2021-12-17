@@ -26,7 +26,7 @@ global.override.block(LogicBlock, {
 					let collapsed = this.ldbCollapser.isCollapsed();
 					this.ldbBuildVariables();
 					cell.setElement(this.ldbCollapser).get().setCollapsed(collapsed);
-				}).size(40).center()
+				}).size(20).center()
 			);
 		}).center();
 		table.row();
